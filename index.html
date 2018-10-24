@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <title>Exercice 5 - partie 4 - Angular</title>
+</head>
+<body ng-app>
+  <div class="container present">
+    <h1>Exercice 5 de la partie 4 d'Angular</h1>
+    <p>Faire une page HTML contenant un bouton Afficher et un bouton Cacher.
+    </br>Au clic sur l'un ou sur l'autre afficher ou non un paragraphe de votre choix.</p>
+  </div>
+  <div class="container show">
+    <button type="button" checked name="button" ng-click= "show=false" >Afficher</button>
+    <button type="button" name="button" ng-click= "show=true">Cacher</button>
+  </div>
+  <div ng-hide="show" class="container">
+  <p>George Best, né le 22 mai 1946 à Belfast en Irlande du Nord et mort le 25 novembre 2005 à Londres en Angleterre,
+     </br>est un footballeur nord-irlandais.
+     </br>Il est considéré comme l'un des plus grands attaquants de l'histoire.</p>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.5/angular.min.js"></script>
+</body>
+</html>
